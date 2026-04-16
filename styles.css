@@ -138,27 +138,23 @@ p { margin: 0 0 14px; color: #d4ddd7; }
   background: rgba(255,255,255,0.025);
   border: 1px solid rgba(111, 155, 138, 0.12);
 }
-.profile--portrait .profile__image {
-  width: 112px;
-  height: 112px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin: 0 0 16px;
-  border: 1px solid rgba(111, 155, 138, 0.22);
-}
 .profile--wide { grid-column: span 2; }
-.image-frame {
+.placeholder {
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border: 1px dashed rgba(111, 155, 138, 0.25);
   border-radius: 18px;
-  overflow: hidden;
-  border: 1px solid rgba(111, 155, 138, 0.18);
-  background: rgba(255,255,255,0.03);
-  margin-bottom: 14px;
+  padding: 24px;
 }
-.image-frame img {
-  display: block;
-  width: 100%;
-  height: auto;
+.placeholder__box {
+  padding: 40px 28px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(111, 155, 138, 0.18);
+  margin-bottom: 14px;
+  color: var(--muted);
 }
 .footer {
   padding: 0 0 48px;
